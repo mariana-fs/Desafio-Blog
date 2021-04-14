@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Blog Title</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <a href="/index.html">Home</a>
+                <a href="/about-me.html">About me</a>
+                <a href="#">Make A Post</a>
+            </ul>
+        </div>
+        <div class="accounts">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+        </div>
+    </nav>
+    <section class="header">
+        <h1>Blog Title</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, maxime.</h4>
+    </section>
+    <hr>
+    <section class="container-content">
+        <form action="/save-classes" id="create-class" method="POST">
+            <fieldset>
+                <legend>Faça um post!</legend>
+
+                <div class="input-block">
+                    <label for="titulo">Título do Post</label>
+                    <input name="titulo" id="titulo" required>
+                </div>
+                <div class="input-block">
+                    <label for="image-header">Link da sua imagem <small>(comece com https://)</small> </label>
+                    <input name="image-header" id="image-header" type="url" required>
+                </div>        
+                <div class="textarea-block">
+                    <label for="conteudo">Escreva aqui!</label>
+                    <textarea name="conteudo" id="conteudo" required></textarea>
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <h4>contact@contact.com</h4>
+        <div class="accounts-footer">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+        </div>
+    </footer>    
+</body>
+</html>
